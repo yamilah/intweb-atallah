@@ -75,11 +75,16 @@ section article p {
 
 footer {
     clear: both;
+    background-color: #fdd028;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     margin-top: 50px;
+    height: 50px;
 }
 
 footer nav {
-    margin-bottom: 10px;
+    display: inline-block;
+    float: right;
+    padding-top: 20px;
+    padding-right: 10px;
 }
