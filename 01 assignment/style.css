@@ -15,6 +15,11 @@ header img {
     display: inline;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 nav, nav ul, nav li {
     display: inline-block;
 }
@@ -63,6 +68,16 @@ section article {
     display: inline-block;
     text-align: left;
     margin: 7px;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: 0.6;
+    background-color: white;
+}
+
+section article:hover {
+    opacity: 1;
 }
 
 section article p {
