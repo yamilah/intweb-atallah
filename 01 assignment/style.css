@@ -37,8 +37,69 @@ nav, nav ul, nav li {
     padding: 10px;
 }
 
+#top-nav ul li {
+    -o-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+}
+
+#top-nav ul li:hover {
+    -o-transform: rotate(5deg) scale(1.05);
+    -ms-transform: rotate(5deg) scale(1.05);
+    -webkit-transform: rotate(5deg) scale(1.05);
+    transform: rotate(5deg) scale(1.05);
+    transition: transform .3s;
+}  
+
+nav ul li {
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition-duration: .3s;
+}
+
+nav ul li:hover {
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transition-duration: .3s;
+}
+
 nav ul li:not(:last-child) {
     padding-right: 35px;
+}
+
+aside {
+    clear: both;    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    float: left;
+    background-color: black;
+    color: white;
+    position: fixed;
+    left: -160px;
+    width: 200px;
+    transition: left .5s;
+    z-index: 1;
+    margin-top: 10%;
+}
+
+aside:hover {
+    clear: both;
+    float: left;
+    background-color: black;
+    color: white;
+    position: fixed;
+    left: 0px;
+    width: 200px;
+    transition: left .5s;
+}
+
+aside p {
+    padding: 30px;
 }
 
 header nav {
@@ -68,16 +129,21 @@ section article {
     display: inline-block;
     text-align: left;
     margin: 7px;
-    -o-transition: .3s;
-    -ms-transition: .3s;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
     opacity: 0.6;
     background-color: white;
 }
 
 section article:hover {
     opacity: 1;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -webkit-transition: .3s;
+    box-shadow: 0px 0px 5px 4px #C9C9C9;
+    transition: .3s;
 }
 
 section article p {
@@ -103,4 +169,20 @@ footer nav {
     float: right;
     padding-top: 20px;
     padding-right: 10px;
+}
+
+footer img {
+    -o-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    transition: transform .6s;
+}
+
+footer img:hover {
+    -o-transform: rotate(360deg) scale(1.05);
+    -ms-transform: rotate(360eg) scale(1.05);
+    -webkit-transform: rotate(360deg) scale(1.05);
+    transform: rotate(360deg) scale(1.05);
+    transition: transform .6s;
 }
