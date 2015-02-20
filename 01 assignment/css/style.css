@@ -8,11 +8,13 @@ header {
   background-color: white;
   box-shadow: 0px 0px 5px 2px #C9C9C9; }
   header img {
-    display: inline; }
+    display: inline;
+    margin-top: 40px; }
   header nav {
     padding-top: 20px;
     float: right;
     margin-bottom: 15px;
+    margin-top: 45px;
     text-align: right;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -31,7 +33,9 @@ nav, nav ul, nav li {
   width: 100%;
   text-align: right;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  position: fixed;
+  z-index: 1; }
   #top-nav ul {
     padding: 10px; }
     #top-nav ul li {
