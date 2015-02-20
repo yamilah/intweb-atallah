@@ -119,7 +119,8 @@ section {
       padding-right: 15px;
       padding-bottom: 15px;
       margin-top: 10px;
-      font-family: 'Open Sans', sans-serif; }
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.5em; }
 
 footer {
   clear: both;
