@@ -1,0 +1,226 @@
+body {
+  background-color: #faf9f9; }
+
+header {
+  background-color: white;
+  box-shadow: 0px 0px 5px 2px #C9C9C9; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 1334px), (min-resolution: 326dpi) {
+    header {
+      display: none; } }
+  header img {
+    display: inline;
+    margin-top: 2.5%;
+    width: 12%;
+    padding-bottom: .5%;
+    padding-left: 3%; }
+  header nav {
+    padding-top: 1.5%;
+    float: right;
+    margin-bottom: 1%;
+    margin-top: 2.5%;
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding-right: 2.5%; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+nav, nav ul, nav li {
+  display: inline-block; }
+
+#desktop-menu {
+  background-color: #fdd028;
+  border-bottom: 5px solid #FAA819;
+  width: 100%;
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.3em;
+  position: fixed;
+  z-index: 1;
+  top: 0; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 1334px), (min-resolution: 326dpi) {
+    #desktop-menu {
+      display: none; } }
+  #desktop-menu ul {
+    padding: .5%;
+    padding-right: 2.2%; }
+    #desktop-menu ul li {
+      -o-transform: rotate(0deg) scale(1);
+      -ms-transform: rotate(0deg) scale(1);
+      -webkit-transform: rotate(0deg) scale(1);
+      transform: rotate(0deg) scale(1); }
+      #desktop-menu ul li:hover {
+        -o-transform: rotate(5deg) scale(1.05);
+        -ms-transform: rotate(5deg) scale(1.05);
+        -webkit-transform: rotate(5deg) scale(1.05);
+        transform: rotate(5deg) scale(1.05);
+        transition: transform .3s; }
+
+#mobile-menu {
+  display: none;
+  background-color: #fdd028;
+  border-bottom: 5px solid #FAA819;
+  width: 100%;
+  float: right;
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  position: fixed;
+  z-index: 1;
+  top: 0; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 1334px), (min-resolution: 326dpi) {
+    #mobile-menu {
+      display: block; } }
+  #mobile-menu ul {
+    font-size: 4em;
+    margin-right: 3%;
+    padding-top: .5%; }
+  #mobile-menu img {
+    display: inline;
+    width: 15%;
+    float: left;
+    padding: 1%;
+    padding-left: 3%; }
+
+nav ul li {
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition-duration: .3s; }
+  nav ul li:hover {
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transition-duration: .3s; }
+  nav ul li:not(:last-child) {
+    padding-right: 35px; }
+
+aside {
+  clear: both;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  float: left;
+  background-color: black;
+  color: white;
+  position: fixed;
+  left: -160px;
+  width: 200px;
+  transition: left .5s;
+  z-index: 1;
+  margin-top: 10%; }
+  aside p {
+    padding: 30px; }
+  aside:hover {
+    clear: both;
+    float: left;
+    background-color: black;
+    color: white;
+    position: fixed;
+    left: 0px;
+    width: 200px;
+    transition: left .5s; }
+
+section {
+  text-align: center;
+  margin-top: 2%;
+  padding: 1%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  background-color: white;
+  box-shadow: 0px 0px 5px 2px #C9C9C9;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 1334px), (min-resolution: 326dpi) {
+    section {
+      margin-top: 10.5%;
+      margin-bottom: 5%;
+      width: 60%;
+      padding: 2%;
+      padding-top: 2%;
+      padding-bottom: 2%; } }
+  section article {
+    width: 98%;
+    box-shadow: 0px 0px 5px 2px #C9C9C9;
+    display: inline-block;
+    text-align: left;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    opacity: 0.6;
+    background-color: white; }
+    section article h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 2.2em;
+      padding-left: 3.5%;
+      padding-top: 5%; }
+    section article h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      font-size: 2em;
+      padding-left: 3.5%;
+      padding-top: 2%;
+      margin-bottom: 2.5%;
+      color: grey; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 1334px), (min-resolution: 326dpi) {
+      section article {
+        width: 100%; }
+        section article:not(:last-child) {
+          margin-bottom: 7%; } }
+    section article:hover {
+      opacity: 1;
+      -o-transition: .3s;
+      -ms-transition: .3s;
+      -webkit-transition: .3s;
+      box-shadow: 0px 0px 5px 4px #C9C9C9;
+      transition: .3s; }
+    section article p {
+      padding-left: 3.5%;
+      padding-right: 3.5%;
+      padding-bottom: 1.5%;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.4em;
+      line-height: 1.8em; }
+      @media only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 1334px), (min-resolution: 326dpi) {
+        section article p {
+          line-height: 2em;
+          font-size: 1.5em; } }
+    section article img {
+      max-width: 100%; }
+
+footer {
+  clear: both;
+  background-color: #fdd028;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-top: 5%;
+  height: 50px;
+  border-top: 5px solid #FAA819; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 1334px), (min-resolution: 326dpi) {
+    footer {
+      display: none; } }
+  footer nav {
+    display: inline-block;
+    float: right;
+    padding-top: .8%;
+    padding-right: 3%; }
+  footer img {
+    padding-left: 2.5%;
+    -o-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    transition: transform .6s; }
+    footer img:hover {
+      -o-transform: rotate(360deg) scale(1.05);
+      -ms-transform: rotate(360eg) scale(1.05);
+      -webkit-transform: rotate(360deg) scale(1.05);
+      transform: rotate(360deg) scale(1.05);
+      transition: transform .6s; }
