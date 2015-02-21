@@ -7,6 +7,9 @@ header {
   @media only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 1334px), (min-resolution: 326dpi) {
     header {
       display: none; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), (min-width: 2048px), (min-resolution: 326dpi) {
+    header {
+      display: none; } }
   header img {
     display: inline;
     margin-top: 2.5%;
@@ -44,6 +47,9 @@ nav, nav ul, nav li {
   @media only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 1334px), (min-resolution: 326dpi) {
     #desktop-menu {
       display: none; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), (min-width: 2047px), (min-resolution: 326dpi) {
+    #desktop-menu {
+      display: none; } }
   #desktop-menu ul {
     padding: .5%;
     padding-right: 2.2%; }
@@ -72,6 +78,9 @@ nav, nav ul, nav li {
   z-index: 1;
   top: 0; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 1334px), (min-resolution: 326dpi) {
+    #mobile-menu {
+      display: block; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), (min-width: 2048x), (min-resolution: 326dpi) {
     #mobile-menu {
       display: block; } }
   #mobile-menu ul {
@@ -201,6 +210,9 @@ footer {
   height: 50px;
   border-top: 5px solid #FAA819; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 1334px), (min-resolution: 326dpi) {
+    footer {
+      display: none; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), (min-width: 2048px), (min-resolution: 326dpi) {
     footer {
       display: none; } }
   footer nav {
