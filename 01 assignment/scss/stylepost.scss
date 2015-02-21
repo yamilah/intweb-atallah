@@ -182,7 +182,7 @@ section {
     }
     
     article {
-        width: 100%;
+        width: 98%;
         box-shadow: 0px 0px 5px 2px #C9C9C9;
         display: inline-block;
         text-align: left;
@@ -196,7 +196,7 @@ section {
         h1 {
             font-family: 'Open Sans', sans-serif;
             font-weight: 700;
-            font-size: 2em;
+            font-size: 2.2em;
             padding-left: 3.5%;
             padding-top: 5%;
         }
@@ -204,8 +204,11 @@ section {
         h2 {
             font-family: 'Open Sans', sans-serif;
             font-weight: 300;
+            font-size: 2em;
             padding-left: 3.5%;
             padding-top: 2%;
+            margin-bottom: 2.5%;
+            color: grey;
         }
         
         @media only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 1334px), (min-resolution: 326dpi) {
@@ -225,30 +228,13 @@ section {
             transition: .3s;
         }
         
-        &:nth-child(odd) {
-            margin-right: 1.5%;
-            
-            @media only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 1334px), (min-resolution: 326dpi) {
-                margin-right: 0%;
-            }
-        }
-        
-        &:nth-child(3) {
-            margin-top: 2%;
-            margin-bottom: 2%;
-            
-            @media only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 1334px), (min-resolution: 326dpi) {
-                margin: 0%;
-            }
-        }
-        
         p {
             padding-left: 3.5%;
             padding-right: 3.5%;
-            padding-bottom: 3.5%;
-            margin-top: 3.5%;
+            padding-bottom: 1.5%;
             font-family: 'Open Sans', sans-serif;
-            line-height: 1.7em;
+            font-size: 1.4em;
+            line-height: 1.8em;
             
             @media only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 1334px), (min-resolution: 326dpi) {
                 line-height: 2em;
