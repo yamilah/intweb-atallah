@@ -59,10 +59,8 @@ document.getElementById("submit").onclick = function() {
         failure = true;
     }
     
-    console.log("test");
     if (!failure) {
         document.body.style.backgroundColor = "#" + foundColor;
-        console.log("test222");
     }
     return false;
 };
