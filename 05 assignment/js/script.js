@@ -11,11 +11,12 @@ document.getElementById("submit").onclick = function() {
         lname.classList.add("error");
     }
     
-    /*var email = document.getElementsByName("email")[0];
+    var email = document.getElementsByName("email")[0];
     
-    if (fname.value.length <= 2) {
-        fname.classList.add("error");
-    }*/
+    // Regular expression found in http://stackoverflow.com/questions/46155/validate-email-address-in-javascript.
+    if (!email.value.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+        email.classList.add("error");
+    }
     
     var uname = document.getElementsByName("uname")[0];
     
@@ -29,17 +30,25 @@ document.getElementById("submit").onclick = function() {
         pass.classList.add("error");
     }
     
-    /*var vpass = document.getElementsByName("vpass")[0];
+    var vpass = document.getElementsByName("vpass")[0];
     
-    if (vpass.value.length <= 2) {
+    if (vpass.value !== pass.value) {
         vpass.classList.add("error");
     }
     
-    var color = document.getElementsByName("fname")[0];
+    var color = document.getElementsByName("fcolor");
+    var foundColor = null;
     
-    if (fname.value.length <= 2) {
-        fname.classList.add("error");
-    }*/
+    for (var colorIndex = 0; colorIndex < color.length; colorIndex++) {
+        if (color[colorIndex].checked) {
+            foundColor = color[colorIndex].value;
+        }
+    }
+    if (foundColor === null) {
+        var colorLabel = document.getElementById("color-label");
+        
+        colorLabel.classList.add("error");
+    }
     
     return false;
 };
