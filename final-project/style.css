@@ -1,36 +1,80 @@
+body {
+    background-color: #f7f7f7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /*
 .arrowLeft {
-    display: inline;
-    float: left;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 75px 50px 75px 0;
-    border-color: transparent #25282b transparent transparent;
+display: inline;
+float: left;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 75px 50px 75px 0;
+border-color: transparent #25282b transparent transparent;
 }
 
 .arrowRight {
-    display: inline;
-    float: right;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 75px 0 75px 50px;
-    border-color: transparent transparent transparent #25282b;
+display: inline;
+float: right;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 75px 0 75px 50px;
+border-color: transparent transparent transparent #25282b;
 }
 */
 
 .dayWrapper {
-    clear: both;
     background-color: white;
-    box-shadow: 0px 0px 8px 1px #eaeaea;
+    box-shadow: 0px 0px 15px 1px #cecece;
+    border: 2px solid black;
 }
 
-.dayToday {
+.dayToday, .dayWeek {
     text-align: center;
 }
 
-span ul {
-    clear: both;
+.dayWeek ul {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 2.6em;
     display: inline;
+    line-height: 2em;
+}
+
+.dayWeek ul:not(:last-child) {
+    padding-right: 60px;
+}
+
+h1, h3, h4 {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h4 {
+    font-size: 2.6em;
+    font-weight: 100;
+}
+
+h1 {
+    margin-top: 40px;
+}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 4em;
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-size: 8.5em;
+}
+
+h4 {
+    letter-spacing: 15px;
+    margin-bottom: 60px;
 }
