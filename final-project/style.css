@@ -34,14 +34,14 @@ border-color: transparent transparent transparent #25282b;
     width: 960px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
-    padding-top: 20px;
 }
 
 #dayWrapper {
     background-color: white;
-    box-shadow: 0px 0px 15px 1px #cecece;
+    box-shadow: 0px 0px 15px 3px #cecece;
     border-bottom: 2px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #dayToday {
@@ -59,8 +59,11 @@ border-color: transparent transparent transparent #25282b;
     padding-right: 52px;
 }
 
-h1, h3, h4 {
+h1, h3, h4, p {
     font-family: 'Lato', sans-serif;
+}
+
+h1 {
 }
 
 h1, h4 {
@@ -91,7 +94,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    box-shadow: 0px 0px 15px 1px #cecece;
+    box-shadow: 0px 0px 15px 3px #cecece;
     border-top: 2px solid black;
     height: 65px;
 }
@@ -103,6 +106,7 @@ footer {
     height: 2em;
     width: .2em;
     margin-right: 20px;
+    margin-top: 15px;
 }
 
 #cross:after {
@@ -115,14 +119,34 @@ footer {
     width: 2em;
 }
 
-.label {
-    margin-top: 12px;
+.labelHrz {
+    display: inline-block;
     float: left;
-    width: 6.5em;
-    height: .2em;
+    position: relative;
+    margin-top: 14px;
+}
+
+.labelHrz:not(:last-child) {
+    margin-right: 40px;
+}
+
+.column {
+    display: inline-block;
+}
+
+p {
+    font-weight: 100;
+    font-size: 1.3em;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.label {
+    width: 7em;
+    height: .4em;
     background-color: black;
 }
 
-.label:not(:last-child) {
-    margin-right: 50px;
+#column {
+    display: block;
 }
