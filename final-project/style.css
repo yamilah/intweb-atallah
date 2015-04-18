@@ -1,4 +1,5 @@
-body {
+html, body {
+    height: 100%;
     background-color: #f7f7f7;
 }
 
@@ -8,7 +9,7 @@ a {
 }
 
 /*
-.arrowLeft {
+#arrowLeft {
 display: inline;
 float: left;
 width: 0;
@@ -18,7 +19,7 @@ border-width: 75px 50px 75px 0;
 border-color: transparent #25282b transparent transparent;
 }
 
-.arrowRight {
+#arrowRight {
 display: inline;
 float: right;
 width: 0;
@@ -29,13 +30,21 @@ border-color: transparent transparent transparent #25282b;
 }
 */
 
-.dayWrapper {
-    background-color: white;
-    box-shadow: 0px 0px 15px 1px #cecece;
-    border: 2px solid black;
+.contentWrapper {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-top: 20px;
 }
 
-.dayToday, .dayWeek {
+#dayWrapper {
+    background-color: white;
+    box-shadow: 0px 0px 15px 1px #cecece;
+    border-bottom: 2px solid black;
+}
+
+#dayToday {
     text-align: center;
 }
 
@@ -44,11 +53,10 @@ border-color: transparent transparent transparent #25282b;
     font-weight: 100;
     font-size: 2.6em;
     display: inline;
-    line-height: 2em;
 }
 
 .dayWeek ul:not(:last-child) {
-    padding-right: 60px;
+    padding-right: 52px;
 }
 
 h1, h3, h4 {
@@ -60,21 +68,61 @@ h1, h4 {
     font-weight: 100;
 }
 
-h1 {
-    margin-top: 40px;
-}
-
 h2 {
     font-family: 'Abril Fatface', cursive;
     font-size: 4em;
     letter-spacing: 3px;
+    line-height: .8em;
 }
 
 h3 {
     font-size: 8.5em;
+    line-height: .9em;
 }
 
 h4 {
     letter-spacing: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 0px 15px 1px #cecece;
+    border-top: 2px solid black;
+    height: 65px;
+}
+
+#cross {
+    position: relative;
+    float: right;
+    background: black;
+    height: 2em;
+    width: .2em;
+    margin-right: 20px;
+}
+
+#cross:after {
+    background: black;
+    content: "";
+    height: .2em;
+    left: -.9em;
+    position: absolute;
+    top: .8em;
+    width: 2em;
+}
+
+.label {
+    margin-top: 12px;
+    float: left;
+    width: 6.5em;
+    height: .2em;
+    background-color: black;
+}
+
+.label:not(:last-child) {
+    margin-right: 50px;
 }
