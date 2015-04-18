@@ -55,10 +55,6 @@ border-color: transparent transparent transparent #25282b;
     display: inline;
 }
 
-.dayWeek ul:not(:last-child) {
-    padding-right: 52px;
-}
-
 h1, h3, h4, p {
     font-family: 'Lato', sans-serif;
 }
@@ -105,7 +101,7 @@ footer {
     background: black;
     height: 2em;
     width: .2em;
-    margin-right: 20px;
+    margin-right: 55px;
     margin-top: 15px;
 }
 
@@ -132,21 +128,27 @@ footer {
 
 .column {
     display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+.column:not(:last-child) {
+    margin-right: 33px;
+}
+
+.labelVrt {
+    margin-top: 50px;
 }
 
 p {
     font-weight: 100;
     font-size: 1.3em;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     margin-bottom: 10px;
 }
 
 .label {
-    width: 7em;
+    position: relative;
     height: .4em;
     background-color: black;
-}
-
-#column {
-    display: block;
 }
