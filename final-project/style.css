@@ -53,7 +53,7 @@ a {
     width: 300px;
 }
 
-.dayWeek ul {
+#dayWeek ul {
     font-family: 'Lato', sans-serif;
     font-weight: 100;
     font-size: 2.6em;
@@ -68,24 +68,24 @@ h1 {
 }
 
 h1, h4 {
-    font-size: 2.6em;
+    font-size: 2em;
     font-weight: 100;
 }
 
 h2 {
     font-family: 'Abril Fatface', cursive;
-    font-size: 4em;
+    font-size: 3em;
     letter-spacing: 3px;
     line-height: .8em;
 }
 
 h3 {
-    font-size: 8.5em;
+    font-size: 6.5em;
     line-height: .9em;
 }
 
 h4 {
-    letter-spacing: 15px;
+    letter-spacing: 10px;
     margin-bottom: 50px;
 }
 
