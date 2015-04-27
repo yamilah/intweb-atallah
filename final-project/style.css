@@ -11,7 +11,10 @@ a {
 #header {
     background-color: white;
     box-shadow: 0px 0px 15px 3px #cecece;
-    border-bottom: 2px solid black;
+    border-bottom: 0.2em solid black;
+    position: fixed;
+    right: 0;
+    left: 0;
 }
 
 #date-wrapper {
@@ -51,6 +54,10 @@ h3 {
     padding-bottom: 0.3em;
 }
 
+#body {
+    padding-top: 25em;
+}
+
 footer {
     background-color: white;
     position: fixed;
@@ -58,7 +65,7 @@ footer {
     left: 0;
     right: 0;
     box-shadow: 0px 0px 15px 3px #cecece;
-    border-top: 2px solid black;
+    border-top: 0.1em solid black;
     height: 65px;
     font-weight: 100;
     font-size: 1.3em;
@@ -68,7 +75,7 @@ footer ul {
     display: flex;
     justify-content: space-around;
     position: relative;
-    top: 40%;
+    top: 30%;
 }
 
 footer ul li {
@@ -76,4 +83,6 @@ footer ul li {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-bottom: 0.2em;
+    border-bottom: 0.3em solid black;
 }
