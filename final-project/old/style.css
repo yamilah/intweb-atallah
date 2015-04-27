@@ -1,0 +1,159 @@
+html, body {
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#arrowLeft, #arrowRight {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-bottom: 50px;
+}
+
+#arrowLeft {
+    border-width: 75px 50px 75px 0;
+    border-color: transparent #25282b transparent transparent;
+}
+
+#arrowRight {
+    border-width: 75px 0 75px 50px;
+    border-color: transparent transparent transparent #25282b;
+}
+
+
+#headerCenter {
+    text-align: center;
+}
+
+.contentWrapper {
+    clear: both;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dayWrapper {
+    clear: both;
+    background-color: white;
+    box-shadow: 0px 0px 15px 3px #cecece;
+    border-bottom: 2px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#dayToday {
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+}
+
+#dayWeek ul {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 2.6em;
+    display: inline;
+}
+
+h1, h3, h4, p {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+}
+
+h1, h4 {
+    font-size: 2em;
+    font-weight: 100;
+}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3em;
+    letter-spacing: 3px;
+    line-height: .8em;
+}
+
+h3 {
+    font-size: 6.5em;
+    line-height: .9em;
+}
+
+h4 {
+    letter-spacing: 10px;
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 0px 15px 3px #cecece;
+    border-top: 2px solid black;
+    height: 65px;
+}
+
+#cross {
+    position: relative;
+    float: right;
+    background: black;
+    height: 2em;
+    width: .2em;
+    margin-right: 55px;
+    margin-top: 15px;
+}
+
+#cross:after {
+    background: black;
+    content: "";
+    height: .2em;
+    left: -.9em;
+    position: absolute;
+    top: .8em;
+    width: 2em;
+}
+
+.labelHrz {
+    display: inline-block;
+    float: left;
+    position: relative;
+    margin-top: 14px;
+}
+
+.labelHrz:not(:last-child) {
+    margin-right: 40px;
+}
+
+.column {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+.column:not(:last-child) {
+    margin-right: 33px;
+}
+
+.labelVrt {
+    margin-top: 50px;
+}
+
+p {
+    font-weight: 100;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.label {
+    position: relative;
+    height: .4em;
+    background-color: black;
+}
