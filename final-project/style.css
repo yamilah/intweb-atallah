@@ -19,6 +19,10 @@ a {
     border-bottom: 0.2em solid black;
 }
 
+.hidden {
+    display: none;
+}
+
 #create-menu p {
     font-family: 'Roboto Slab', serif;
 }
