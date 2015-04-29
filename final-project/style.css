@@ -8,6 +8,33 @@ a {
     color: inherit;
 }
 
+#create-menu {
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 0px 15px 3px #cecece;
+    padding: 5em 5em 0 5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 0.2em solid black;
+}
+
+#create-menu p {
+    font-family: 'Roboto Slab', serif;
+}
+
+.fields {
+    font-weight: 100;
+    padding-bottom: 1.5em;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1em;
+    padding-top: 2.5em;
+}
+
 #header {
     background-color: white;
     box-shadow: 0px 0px 15px 3px #cecece;
@@ -23,13 +50,13 @@ a {
     text-align: center;
 }
 
-h1, h3, h4, footer, #week-wrapper, #content-wrapper {
-    font-family: 'Lato', sans-serif;
+h1, h3, h4, h5, footer, #week-wrapper {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1, h4 {
     font-size: 3.5em;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 h1 {
@@ -38,38 +65,60 @@ h1 {
 
 h2 {
     font-family: 'Abril Fatface', cursive;
-    font-size: 4em;
-    line-height: .8em;
+    font-size: 3.8em;
 }
 
 h3 {
-    font-size: 7.5em;
+    font-size: 8em;
+    line-height: .8em;
+}
+
+h4 {
+
+    letter-spacing: .1em;
+}
+
+h5 {
+    font-size: 1.5em;
+    padding-bottom: .5em;
 }
 
 #week-wrapper ul {
     display: flex;
     justify-content: space-around;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 2.6em;
     padding-bottom: 0.3em;
 }
 
+#week-wrapper ul li {
+    text-align: center;
+    width: 8em;
+}
+
 #content-wrapper {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
     padding-top: 23em;
     display: flex;
     justify-content: space-around;
-    font-weight: 100;
+    flex-wrap: wrap;
+    font-weight: 200;
     margin-bottom: 8em;
 }
 
-#content-wrapper ul li {
+#content-wrapper ul {
     width: 8em;
+}
+
+#content-wrapper ul li {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     padding-bottom: 0.2em;
-    padding-top: 4em;
+    padding-top: 6em;
     border-bottom: 0.3em solid black;
+    font-size: 0.8em;
 }
 
 footer {
@@ -81,7 +130,7 @@ footer {
     box-shadow: 0px 0px 15px 3px #cecece;
     border-top: 0.1em solid black;
     height: 3em;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 1.3em;
 }
 
@@ -89,7 +138,9 @@ footer ul {
     display: flex;
     justify-content: space-around;
     position: relative;
+    padding-left: 2em;
     top: 30%;
+    width: 60%;
 }
 
 footer ul li {
@@ -99,4 +150,28 @@ footer ul li {
     text-overflow: ellipsis;
     padding-bottom: 0.2em;
     border-bottom: 0.3em solid black;
+}
+
+footer ul li, #content-wrapper ul li {
+
+    letter-spacing: 0.05em;
+}
+
+#cross {
+    position: fixed;
+    background: black;
+    height: 1.9em;
+    width: .2em;
+    right: 3em;
+    bottom: 0.5em;
+}
+
+#cross:after {
+    background: black;
+    content: "";
+    height: .2em;
+    left: -.9em;
+    position: absolute;
+    top: .8em;
+    width: 2em;
 }
