@@ -1,11 +1,11 @@
 body {
-  background-color: lightgrey;
+  background-color: #F9F9F9;
 }
 
 #nav-1 {
   background-color: black;
   color: white;
-  
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  
+
   width: 30vw;
 }
 
@@ -32,8 +32,16 @@ body {
 #nav-2 ul {
   display: flex;
   justify-content: space-around;
-  
+}
+
+#nav-2 ul li {
   padding: 1.5vw;
+}
+
+#nav-2 ul li:hover {
+  background-color: black;
+  color: white;
+  transition-duration: 0.3s;
 }
 
 #content-flex-wrapper {
@@ -45,9 +53,9 @@ body {
 #shadow-wrapper {
   box-shadow:  0px 0px 15px -6px;
   margin-top: 5vw;
-  
+
   width: 60vw;
-  
+
   background-color: white;
 }
 
@@ -69,14 +77,18 @@ h2 {
   font-size: 2vw;
 }
 
-p {
+.element-wrapper p {
   font-size: 1vw;
   line-height: 1.3vw;
 }
 
 .element-wrapper {
   width: 25vw;
-  padding-bottom: 2vw;
+  padding: 1.5vw;
+
+  box-shadow:  0px 0px 8px -6px;
+  
+  margin-bottom: 1vw;
 }
 
 .element-wrapper:hover .banner {
@@ -84,7 +96,44 @@ p {
   transition-duration: 0.5s;
 }
 
+.element-wrapper:hover {
+  box-shadow:  0px 0px 13px -6px;
+  transition-duration: 0.5s;
+}
+
 .banner {
   height: 10vw;
   background-color: black;
+}
+
+footer {
+  background-color: white;
+  margin-top: 5vw;
+
+  box-shadow:  0px 0px 15px -6px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30vw;
+}
+
+footer ul li {
+  padding: 1vw;
+}
+
+footer ul li:hover {
+  background-color: black;
+  color: white;
+  transition-duration: 0.3s;
+}
+
+footer p {
+  padding: 1vw;
 }
