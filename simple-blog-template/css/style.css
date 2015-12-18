@@ -1,0 +1,90 @@
+body {
+  background-color: lightgrey;
+}
+
+#nav-1 {
+  background-color: black;
+  color: white;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-1 img:hover {
+  opacity: 0.8;
+  transition-duration: 0.5s;
+}
+
+#nav-1 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  width: 30vw;
+}
+
+#nav-2 {
+  box-shadow:  0px 0px 15px -6px;
+  background-color: white;
+}
+
+#nav-2 ul {
+  display: flex;
+  justify-content: space-around;
+  
+  padding: 1.5vw;
+}
+
+#content-flex-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shadow-wrapper {
+  box-shadow:  0px 0px 15px -6px;
+  margin-top: 5vw;
+  
+  width: 60vw;
+  
+  background-color: white;
+}
+
+#content-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 3vw;
+  padding: 2vw;
+}
+
+h2 {
+  padding-top: 1vw;
+  padding-bottom: .5vw;
+  font-size: 2vw;
+}
+
+p {
+  font-size: 1vw;
+  line-height: 1.3vw;
+}
+
+.element-wrapper {
+  width: 25vw;
+  padding-bottom: 2vw;
+}
+
+.element-wrapper:hover .banner {
+  opacity: 0.8;
+  transition-duration: 0.5s;
+}
+
+.banner {
+  height: 10vw;
+  background-color: black;
+}
